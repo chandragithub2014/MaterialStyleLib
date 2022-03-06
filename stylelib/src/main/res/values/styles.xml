@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StyleLibTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_600</item>
+    </style>
+
+    <style name="StyleLibTextStyle.H1">
+        <item name="android:textSize">@dimen/style_lib_text_size_h1</item>
+        <item name="android:fontFamily">@font/roboto_light_fonts</item>
+    </style>
+
+    <style name="StyleLibTextStyle.H2">
+        <item name="android:textSize">@dimen/style_lib_text_size_h2</item>
+        <item name="android:fontFamily">@font/roboto_light_fonts</item>
+    </style>
+
+    <style name="StyleLibTextStyle.H3">
+        <item name="android:textSize">@dimen/style_lib_text_size_h3</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="StyleLibTextStyle.H4">
+        <item name="android:textSize">@dimen/style_lib_text_size_h4</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0.25</item>
+    </style>
+
+    <style name="StyleLibTextStyle.H5">
+        <item name="android:textSize">@dimen/style_lib_text_size_h5</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="StyleLibTextStyle.H6">
+        <item name="android:textSize">@dimen/style_lib_text_size_h6</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:letterSpacing">0.15</item>
+    </style>
+
+    <style name="StyleLibTextStyle.SubTitle1">
+        <item name="android:textSize">@dimen/style_lib_text_size_subtitle1</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0.15</item>
+    </style>
+
+    <style name="StyleLibTextStyle.SubTitle2">
+        <item name="android:textSize">@dimen/style_lib_text_size_subtitle2</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="StyleLibTextStyle.Body1">
+        <item name="android:textSize">@dimen/style_lib_text_size_subtitle1</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0.5</item>
+    </style>
+
+    <style name="StyleLibTextStyle.Body2">
+        <item name="android:textSize">@dimen/style_lib_text_size_subtitle2</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0.25</item>
+    </style>
+
+    <style name="StyleLibTextStyle.Button">
+        <item name="android:textSize">@dimen/style_lib_text_size_subtitle2</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:letterSpacing">1.25</item>
+    </style>
+
+    <style name="StyleLibTextStyle.Caption">
+        <item name="android:textSize">@dimen/style_lib_text_size_caption</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">0.4</item>
+    </style>
+
+    <style name="StyleLibTextStyle.Overline">
+        <item name="android:textSize">@dimen/style_lib_text_size_overline</item>
+        <item name="android:fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:letterSpacing">1.5</item>
+    </style>
+
+    <style name="StyleLibTextStyle.Title">
+        <item name="android:textSize">@dimen/style_lib_text_size_h6</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:letterSpacing">0.15</item>
+    </style>
+
+
+    <!-- Button Styles -->
+
+
+    <style name="StyleLibTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:strokeWidth">@dimen/style_lib_stroke_width</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:layout_marginLeft">@dimen/style_lib_margin_extra_small</item>
+    </style>
+
+    <style name="StyleLibContainedButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:strokeWidth">@dimen/style_lib_stroke_width</item>
+        <item name="cornerRadius">@dimen/style_lib_corner_radius</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:layout_marginLeft">@dimen/style_lib_margin_extra_small</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="StyleLibOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:strokeWidth">@dimen/style_lib_stroke_width</item>
+        <item name="cornerRadius">@dimen/style_lib_corner_radius</item>
+        <item name="android:fontFamily">@font/roboto_medium_fonts</item>
+        <item name="android:layout_marginLeft">@dimen/style_lib_margin_small</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+    </style>
+
+
+</resources>

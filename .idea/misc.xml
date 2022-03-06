@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="stylelib/src/main/res/font/lato.xml" value="0.2546875" />
+        <entry key="stylelib/src/main/res/font/roboto.xml" value="0.2546875" />
+        <entry key="stylelib/src/main/res/font/roboto_light_fonts.xml" value="0.2546875" />
+        <entry key="stylelib/src/main/res/font/roboto_medium.xml" value="0.2546875" />
+        <entry key="stylelib/src/main/res/font/roboto_medium_fonts.xml" value="0.2546875" />
+        <entry key="stylelib/src/main/res/font/roboto_regular_fonts.xml" value="0.2546875" />
+        <entry key="stylelib/src/main/res/layout/test_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

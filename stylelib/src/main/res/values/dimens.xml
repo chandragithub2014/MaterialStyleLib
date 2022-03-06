@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Sizes -->
+    <dimen name = "style_lib_text_size_h1">96sp</dimen>
+    <dimen name="style_lib_text_size_h2">60sp</dimen>
+    <dimen name="style_lib_text_size_h3">48sp</dimen>
+    <dimen name="style_lib_text_size_h4">34sp</dimen>
+    <dimen name="style_lib_text_size_h5">24sp</dimen>
+    <dimen name="style_lib_text_size_h6">20sp</dimen>
+    <dimen name="style_lib_text_size_subtitle1">16sp</dimen>
+    <dimen name="style_lib_text_size_subtitle2">14sp</dimen>
+    <dimen name="style_lib_text_size_caption">12sp</dimen>
+    <dimen name = "style_lib_text_size_overline">10sp</dimen>
+    <dimen name = "style_lib_text_size_very_small">4sp</dimen>
+    <dimen name = "style_lib_text_size_small">8sp</dimen>
+    <dimen name = "style_lib_text_normal">14sp</dimen>
+
+    <dimen name = "style_lib_stroke_width">2dp</dimen>
+    <dimen name = "style_lib_corner_radius">4dp</dimen>
+    <dimen name = "style_lib_normal_corner_radius">8dp</dimen>
+    <dimen name = "style_lib_large_corner_radius">16dp</dimen>
+    <dimen name = "style_lib_extra_large_corner_radius">32dp</dimen>
+
+    <!-- Margin  -->
+    <dimen name = "style_lib_margin_extra_large">64dp</dimen>
+    <dimen name = "style_lib_margin_large">32dp</dimen>
+    <dimen name = "style_lib_margin_normal">16dp</dimen>
+    <dimen name = "style_lib_margin_small">8dp</dimen>
+    <dimen name = "style_lib_margin_very_small">4dp</dimen>
+    <dimen name = "style_lib_margin_extra_small">2dp</dimen>
+    <dimen name = "style_lib_margin_very_extra_small">1dp</dimen>
+</resources>

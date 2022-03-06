@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/h1"
+        style="@style/StyleLibTextStyle.H1"
+        android:text="Header1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/h2"
+        style="@style/StyleLibTextStyle.H2"
+        android:text="Header2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h1"/>
+
+    <TextView
+        android:id="@+id/h3"
+        style="@style/StyleLibTextStyle.H3"
+        android:text="Header3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h2" />
+
+    <TextView
+        android:id="@+id/h4"
+        style="@style/StyleLibTextStyle.H4"
+        android:text="Header4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h3" />
+
+    <TextView
+        android:id="@+id/h5"
+        style="@style/StyleLibTextStyle.H5"
+        android:text="Header5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h4" />
+
+    <TextView
+        android:id="@+id/h6"
+        style="@style/StyleLibTextStyle.H6"
+        android:text="Header6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h5" />
+
+    <TextView
+        android:id="@+id/body1"
+        style="@style/StyleLibTextStyle.Body1"
+        android:text="Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h6" />
+
+    <TextView
+        android:id="@+id/body2"
+        style="@style/StyleLibTextStyle.Body2"
+        android:text="Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/body1" />
+    <TextView
+        android:id="@+id/caption"
+        style="@style/StyleLibTextStyle.Caption"
+        android:text="Caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/body2" />
+
+    <TextView
+        style="@style/StyleLibTextStyle.SubTitle1"
+        android:text="Subtitle"
+        android:id="@+id/subtitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caption" />
+
+    <Button
+        style="@style/StyleLibTextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle1"
+        android:text="Text Button"
+        android:id="@+id/textBtn" />
+    <Button
+        style="@style/StyleLibContainedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBtn"
+        android:text="Contained Button"
+        android:id="@+id/containedBtn" />
+    <Button
+        style="@style/StyleLibOutlinedButton"
+        app:layout_constraintStart_toEndOf="@+id/containedBtn"
+        app:layout_constraintTop_toBottomOf="@id/textBtn"
+        android:text="Outlined Button"
+        android:id="@+id/outlineButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
