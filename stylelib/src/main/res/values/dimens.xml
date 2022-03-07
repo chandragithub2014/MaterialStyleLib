@@ -29,4 +29,18 @@
     <dimen name = "style_lib_margin_very_small">4dp</dimen>
     <dimen name = "style_lib_margin_extra_small">2dp</dimen>
     <dimen name = "style_lib_margin_very_extra_small">1dp</dimen>
+
+    <!-- Padding  -->
+    <dimen name = "style_lib_padding_extra_large">64dp</dimen>
+    <dimen name = "style_lib_padding_large">32dp</dimen>
+    <dimen name = "style_lib_padding_normal">16dp</dimen>
+    <dimen name = "style_lib_padding_small">8dp</dimen>
+    <dimen name = "style_lib_padding_very_small">4dp</dimen>
+    <dimen name = "style_lib_padding_extra_small">2dp</dimen>
+    <dimen name = "style_lib_padding_very_extra_small">1dp</dimen>
+
+    <!-- Card dimens -->
+    <dimen name = "style_lib_card_elevation">4dp</dimen>
+    <dimen name = "style_lib_card_stroke_width">2dp</dimen>
+    <dimen name = "style_lib_card_corner_radius">4dp</dimen>
 </resources>

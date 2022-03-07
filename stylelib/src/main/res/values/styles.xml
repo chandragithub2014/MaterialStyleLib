@@ -121,5 +121,57 @@
         <item name="strokeColor">?attr/colorPrimary</item>
     </style>
 
+    <!-- Edit TextField Styles -->
+    <style name="StyleLibOutlinedTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="errorEnabled">true</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="android:strokeWidth">@dimen/style_lib_stroke_width</item>
+        <item name="cornerRadius">@dimen/style_lib_corner_radius</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_margin">@dimen/style_lib_margin_small</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
 
+    <!-- Edit TextField Styles -->
+    <style name="StyleLibFilledTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="errorEnabled">true</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="android:strokeWidth">@dimen/style_lib_stroke_width</item>
+        <item name="cornerRadius">@dimen/style_lib_corner_radius</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_margin">@dimen/style_lib_margin_small</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <!-- Edit TextField Styles -->
+    <style name="StyleLibDenseTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="errorEnabled">true</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="android:strokeWidth">@dimen/style_lib_stroke_width</item>
+        <item name="cornerRadius">@dimen/style_lib_corner_radius</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_margin">@dimen/style_lib_margin_small</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <!-- CardView Styles -->
+    <style name="StyleLibCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:checkable">true</item>
+        <item name="strokeColor">@color/gray_500</item>
+        <item name="cardElevation">@dimen/style_lib_card_elevation</item>
+        <item name="cornerRadius">@dimen/style_lib_card_corner_radius</item>
+        <item name="strokeWidth">@dimen/style_lib_card_stroke_width</item>
+
+    </style>
 </resources>

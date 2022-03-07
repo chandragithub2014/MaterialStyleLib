@@ -1,96 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true"
 
-    <TextView
-        android:id="@+id/h1"
-        style="@style/StyleLibTextStyle.H1"
-        android:text="Header1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/h2"
-        style="@style/StyleLibTextStyle.H2"
-        android:text="Header2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h1"/>
+    >
 
-    <TextView
-        android:id="@+id/h3"
-        style="@style/StyleLibTextStyle.H3"
-        android:text="Header3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h2" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/style_lib_margin_small"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/h4"
-        style="@style/StyleLibTextStyle.H4"
-        android:text="Header4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h3" />
+        <TextView
+            android:id="@+id/h1"
+            style="@style/StyleLibTextStyle.H1"
+            android:text="Header1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/h5"
-        style="@style/StyleLibTextStyle.H5"
-        android:text="Header5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h4" />
+        <TextView
+            android:id="@+id/h2"
+            style="@style/StyleLibTextStyle.H2"
+            android:text="Header2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h1" />
 
-    <TextView
-        android:id="@+id/h6"
-        style="@style/StyleLibTextStyle.H6"
-        android:text="Header6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h5" />
+        <TextView
+            android:id="@+id/h3"
+            style="@style/StyleLibTextStyle.H3"
+            android:text="Header3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h2" />
 
-    <TextView
-        android:id="@+id/body1"
-        style="@style/StyleLibTextStyle.Body1"
-        android:text="Body1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h6" />
+        <TextView
+            android:id="@+id/h4"
+            style="@style/StyleLibTextStyle.H4"
+            android:text="Header4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h3" />
 
-    <TextView
-        android:id="@+id/body2"
-        style="@style/StyleLibTextStyle.Body2"
-        android:text="Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/body1" />
-    <TextView
-        android:id="@+id/caption"
-        style="@style/StyleLibTextStyle.Caption"
-        android:text="Caption"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/body2" />
+        <TextView
+            android:id="@+id/h5"
+            style="@style/StyleLibTextStyle.H5"
+            android:text="Header5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h4" />
 
-    <TextView
-        style="@style/StyleLibTextStyle.SubTitle1"
-        android:text="Subtitle"
-        android:id="@+id/subtitle1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/caption" />
+        <TextView
+            android:id="@+id/h6"
+            style="@style/StyleLibTextStyle.H6"
+            android:text="Header6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h5" />
 
-    <Button
-        style="@style/StyleLibTextButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subtitle1"
-        android:text="Text Button"
-        android:id="@+id/textBtn" />
-    <Button
-        style="@style/StyleLibContainedButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textBtn"
-        android:text="Contained Button"
-        android:id="@+id/containedBtn" />
-    <Button
-        style="@style/StyleLibOutlinedButton"
-        app:layout_constraintStart_toEndOf="@+id/containedBtn"
-        app:layout_constraintTop_toBottomOf="@id/textBtn"
-        android:text="Outlined Button"
-        android:id="@+id/outlineButton" />
+        <TextView
+            android:id="@+id/body1"
+            style="@style/StyleLibTextStyle.Body1"
+            android:text="Body1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h6" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/body2"
+            style="@style/StyleLibTextStyle.Body2"
+            android:text="Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body1" />
+
+        <TextView
+            android:id="@+id/caption"
+            style="@style/StyleLibTextStyle.Caption"
+            android:text="Caption"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body2" />
+
+        <TextView
+            android:id="@+id/subtitle1"
+            style="@style/StyleLibTextStyle.SubTitle1"
+            android:text="Subtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/caption" />
+
+        <Button
+            android:id="@+id/textBtn"
+            style="@style/StyleLibTextButton"
+            android:text="Text Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitle1" />
+
+        <Button
+            android:id="@+id/containedBtn"
+            style="@style/StyleLibContainedButton"
+            android:text="Contained Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textBtn" />
+
+        <Button
+            android:id="@+id/outlineButton"
+            style="@style/StyleLibOutlinedButton"
+            android:text="Outlined Button"
+            app:layout_constraintStart_toEndOf="@+id/containedBtn"
+            app:layout_constraintTop_toBottomOf="@id/textBtn" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_outlined"
+            style="@style/StyleLibOutlinedTextField"
+            android:layout_width="0dp"
+            app:helperText="Enter Names a to z"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containedBtn">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Outlined TextField"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_filled"
+            style="@style/StyleLibFilledTextField"
+            android:layout_width="0dp"
+            app:helperText="Enter Names a to z"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_outlined">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Filled TextField"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_dense"
+            style="@style/StyleLibFilledTextField"
+            android:layout_width="0dp"
+            app:helperText="Enter Names a to z"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_filled">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dense TextField"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
