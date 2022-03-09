@@ -4,7 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/layout/activity_button_style.xml" value="0.10233029381965553" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_text_field.xml" value="0.10233029381965553" />
+        <entry key="app/src/main/res/layout/button_layout.xml" value="0.10916919959473151" />
+        <entry key="app/src/main/res/layout/home_layout.xml" value="0.10916919959473151" />
+        <entry key="app/src/main/res/layout/info_card_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/info_item_layout.xml" value="0.10916919959473151" />
         <entry key="stylelib/src/main/res/font/lato.xml" value="0.2546875" />
         <entry key="stylelib/src/main/res/font/roboto.xml" value="0.2546875" />
         <entry key="stylelib/src/main/res/font/roboto_light_fonts.xml" value="0.2546875" />

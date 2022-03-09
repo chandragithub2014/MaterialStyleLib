@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialStyleLib">
         <activity
+            android:name=".TextFieldActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonStyleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TextStyleActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

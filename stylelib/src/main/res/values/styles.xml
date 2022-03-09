@@ -172,6 +172,7 @@
         <item name="cardElevation">@dimen/style_lib_card_elevation</item>
         <item name="cornerRadius">@dimen/style_lib_card_corner_radius</item>
         <item name="strokeWidth">@dimen/style_lib_card_stroke_width</item>
+        <item name ="android:layout_margin">@dimen/style_lib_margin_normal</item>
 
     </style>
 </resources>
