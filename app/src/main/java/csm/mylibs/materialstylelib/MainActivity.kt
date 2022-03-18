@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.home_layout.*
 
 class MainActivity : AppCompatActivity() , StyleClickListener{
-    val styleTypes : List<StyleInfo> = listOf(StyleInfo("TextStyle"),StyleInfo("ButtonStyles"),StyleInfo("EditTextStyles"),StyleInfo("CardLayoutStyle"))
+    val styleTypes : List<StyleInfo> = listOf(StyleInfo("TextStyle"),StyleInfo("ButtonStyles"),StyleInfo("EditTextStyles"),StyleInfo("CardLayoutStyle"),
+        StyleInfo("AlertDialogs")
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_layout)
@@ -31,6 +33,9 @@ class MainActivity : AppCompatActivity() , StyleClickListener{
           }
           "EditTextStyles" ->{
               startActivity(Intent(this,TextFieldActivity::class.java))
+          }
+          "AlertDialogs" ->{
+              startActivity(Intent(this,AlertDialogActivity::class.java))
           }
       }
     }
