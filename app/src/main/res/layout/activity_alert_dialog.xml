@@ -25,4 +25,14 @@
         android:text="FormSubmissionDialog"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simpleAlertDialog1" />
+
+    <Button
+        android:id="@+id/simple_alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="SimpleAlertDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/formDialog"
+        app:layout_constraintTop_toBottomOf="@+id/simpleAlertDialog1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

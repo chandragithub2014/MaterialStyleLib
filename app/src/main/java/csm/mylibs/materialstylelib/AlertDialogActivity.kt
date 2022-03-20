@@ -3,6 +3,7 @@ package csm.mylibs.materialstylelib
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import csm.mylibs.stylelib.extensions.showSimpleAlertDialog
 import csm.mylibs.stylelib.extensions.showSimpleAlertDialogWithThreeButtons
 import csm.mylibs.stylelib.extensions.showSubmissionAlertDialog
 import kotlinx.android.synthetic.main.activity_alert_dialog.*
@@ -30,6 +31,15 @@ class AlertDialogActivity : AppCompatActivity() {
                 neutralAction = {printToast("NegativeClick")}
 
                 ){}
+        }
+
+        simple_alert_dialog.setOnClickListener {
+            showSimpleAlertDialog("Alert","Displaying Simple AlertDialog with Two Buttons ",
+                positiveActionButtonTitle = R.string.positive_btn,
+                positiveAction = {printToast("Positive Click")},
+                negativeActionButtonTitle = R.string.negative_btn,
+                negativeAction = {printToast("NegativeClick")}
+            ){}
         }
     }
 

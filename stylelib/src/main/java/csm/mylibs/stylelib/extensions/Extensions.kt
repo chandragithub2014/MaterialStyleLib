@@ -121,3 +121,52 @@ fun Activity.showSimpleAlertDialogWithThreeButtons(
         .setCancelable(false)
         .show()
 }
+
+fun Fragment.showSimpleAlertDialog(title: String,
+                                   message: String,
+                                   @StringRes negativeActionButtonTitle: Int,
+                                   @StringRes positiveActionButtonTitle: Int,
+                                   negativeAction: () -> Unit,
+                                   positiveAction: () -> Unit,
+                                   dismissAction: () -> Unit): AlertDialog {
+    return MaterialAlertDialogBuilder(requireContext())
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+}
+fun Activity.showSimpleAlertDialog(title: String,
+                                   message: String,
+                                   @StringRes negativeActionButtonTitle: Int,
+                                   @StringRes positiveActionButtonTitle: Int,
+                                   negativeAction: () -> Unit,
+                                   positiveAction: () -> Unit,
+                                   dismissAction: () -> Unit): AlertDialog {
+    return MaterialAlertDialogBuilder(this)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+}
