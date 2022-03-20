@@ -43,10 +43,10 @@ fun Fragment.showSubmissionAlertDialog(
     message: String,
     @StringRes neutralActionButtonTitle: Int,
     @StringRes positiveActionButtonTitle: Int,
-    neutralAction:  () -> Unit,
+    neutralAction: () -> Unit,
     positiveAction: () -> Unit,
     dismissAction: () -> Unit
-){
+) {
     MaterialAlertDialogBuilder(requireContext())
         .setTitle(title)
         .setMessage(message)
@@ -69,10 +69,10 @@ fun Activity.showSubmissionAlertDialog(
     message: String,
     @StringRes neutralActionButtonTitle: Int,
     @StringRes positiveActionButtonTitle: Int,
-    neutralAction:  () -> Unit,
+    neutralAction: () -> Unit,
     positiveAction: () -> Unit,
     dismissAction: () -> Unit
-){
+) {
     MaterialAlertDialogBuilder(this)
         .setTitle(title)
         .setMessage(message)
@@ -122,13 +122,15 @@ fun Activity.showSimpleAlertDialogWithThreeButtons(
         .show()
 }
 
-fun Fragment.showSimpleAlertDialog(title: String,
-                                   message: String,
-                                   @StringRes negativeActionButtonTitle: Int,
-                                   @StringRes positiveActionButtonTitle: Int,
-                                   negativeAction: () -> Unit,
-                                   positiveAction: () -> Unit,
-                                   dismissAction: () -> Unit): AlertDialog {
+fun Fragment.showSimpleAlertDialog(
+    title: String,
+    message: String,
+    @StringRes negativeActionButtonTitle: Int,
+    @StringRes positiveActionButtonTitle: Int,
+    negativeAction: () -> Unit,
+    positiveAction: () -> Unit,
+    dismissAction: () -> Unit
+): AlertDialog {
     return MaterialAlertDialogBuilder(requireContext())
         .setTitle(title)
         .setMessage(message)
@@ -146,13 +148,16 @@ fun Fragment.showSimpleAlertDialog(title: String,
         .show()
 
 }
-fun Activity.showSimpleAlertDialog(title: String,
-                                   message: String,
-                                   @StringRes negativeActionButtonTitle: Int,
-                                   @StringRes positiveActionButtonTitle: Int,
-                                   negativeAction: () -> Unit,
-                                   positiveAction: () -> Unit,
-                                   dismissAction: () -> Unit): AlertDialog {
+
+fun Activity.showSimpleAlertDialog(
+    title: String,
+    message: String,
+    @StringRes negativeActionButtonTitle: Int,
+    @StringRes positiveActionButtonTitle: Int,
+    negativeAction: () -> Unit,
+    positiveAction: () -> Unit,
+    dismissAction: () -> Unit
+): AlertDialog {
     return MaterialAlertDialogBuilder(this)
         .setTitle(title)
         .setMessage(message)
@@ -168,5 +173,299 @@ fun Activity.showSimpleAlertDialog(title: String,
         .setOnDismissListener { dismissAction.invoke() }
         .setCancelable(false)
         .show()
+
+}
+
+fun Fragment.showContainedAlertDialogWithTwoButtons(title: String,
+                                           message: String,
+                                           @StringRes negativeActionButtonTitle: Int,
+                                           @StringRes positiveActionButtonTitle: Int,
+                                           negativeAction: () -> Unit,
+                                           positiveAction: () -> Unit,
+                                           dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(requireContext(),R.style.StyleLibAlertDialogContainedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+fun Activity.showContainedAlertDialogWithTwoButtons(title: String,
+                                                    message: String,
+                                                    @StringRes negativeActionButtonTitle: Int,
+                                                    @StringRes positiveActionButtonTitle: Int,
+                                                    negativeAction: () -> Unit,
+                                                    positiveAction: () -> Unit,
+                                                    dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(this,R.style.StyleLibAlertDialogContainedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+//Outlined Alert Dialog
+fun Fragment.showOutlinedAlertDialogWithTwoButtons(title: String,
+                                                    message: String,
+                                                    @StringRes negativeActionButtonTitle: Int,
+                                                    @StringRes positiveActionButtonTitle: Int,
+                                                    negativeAction: () -> Unit,
+                                                    positiveAction: () -> Unit,
+                                                    dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(requireContext(),R.style.StyleLibAlertDialogOutlinedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+fun Activity.showOutlinedAlertDialogWithTwoButtons(title: String,
+                                                    message: String,
+                                                    @StringRes negativeActionButtonTitle: Int,
+                                                    @StringRes positiveActionButtonTitle: Int,
+                                                    negativeAction: () -> Unit,
+                                                    positiveAction: () -> Unit,
+                                                    dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(this,R.style.StyleLibAlertDialogOutlinedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+//Single Button Styled Alert Dialog
+fun Fragment.showOutlinedAlertDialogWithSingleButton(title: String,
+                                                   message: String,
+                                                   @StringRes positiveActionButtonTitle: Int,
+                                                   positiveAction: () -> Unit,
+                                                   dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(requireContext(),R.style.StyleLibAlertDialogSingleOutlinedButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+fun Activity.showOutlinedAlertDialogWithSingleButton(title: String,
+                                                   message: String,
+                                                     @StringRes positiveActionButtonTitle: Int,
+                                                     positiveAction: () -> Unit,
+                                                     dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(this,R.style.StyleLibAlertDialogSingleOutlinedButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+
+//Single ContainedAlert Dialog
+fun Fragment.showContainedAlertDialogWithSingleButton(title: String,
+                                                     message: String,
+                                                     @StringRes positiveActionButtonTitle: Int,
+                                                     positiveAction: () -> Unit,
+                                                     dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(requireContext(),R.style.StyleLibAlertDialogSingleContainedButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+fun Activity.showContainedAlertDialogWithSingleButton(title: String,
+                                                     message: String,
+                                                     @StringRes positiveActionButtonTitle: Int,
+                                                     positiveAction: () -> Unit,
+                                                     dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(this,R.style.StyleLibAlertDialogSingleContainedButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+
+//AlertMixType1
+
+fun Fragment.showPositiveButtonOutlinedAlertDialog(title: String,
+                                                   message: String,
+                                                   @StringRes negativeActionButtonTitle: Int,
+                                                   @StringRes positiveActionButtonTitle: Int,
+                                                   negativeAction: () -> Unit,
+                                                   positiveAction: () -> Unit,
+                                                   dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(requireContext(),R.style.StyleLibAlertDialogPositiveOutlinedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+fun Activity.showPositiveButtonOutlinedAlertDialog(title: String,
+                                                   message: String,
+                                                   @StringRes negativeActionButtonTitle: Int,
+                                                   @StringRes positiveActionButtonTitle: Int,
+                                                   negativeAction: () -> Unit,
+                                                   positiveAction: () -> Unit,
+                                                   dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(this,R.style.StyleLibAlertDialogPositiveOutlinedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+
+//AlertMixType2
+fun Fragment.showPositiveButtonContainedAlertDialog(title: String,
+                                                   message: String,
+                                                   @StringRes negativeActionButtonTitle: Int,
+                                                   @StringRes positiveActionButtonTitle: Int,
+                                                   negativeAction: () -> Unit,
+                                                   positiveAction: () -> Unit,
+                                                   dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(requireContext(),R.style.StyleLibAlertDialogPositiveContainedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
+
+}
+fun Activity.showPositiveButtonContainedAlertDialog(title: String,
+                                                   message: String,
+                                                   @StringRes negativeActionButtonTitle: Int,
+                                                   @StringRes positiveActionButtonTitle: Int,
+                                                   negativeAction: () -> Unit,
+                                                   positiveAction: () -> Unit,
+                                                   dismissAction: () -> Unit): AlertDialog {
+
+    return MaterialAlertDialogBuilder(this,R.style.StyleLibAlertDialogPositiveContainedTwoButton)
+        .setTitle(title)
+        .setMessage(message)
+        .setNegativeButton(negativeActionButtonTitle) { dialog, _ ->
+            negativeAction.invoke()
+            dialog.dismiss()
+        }
+
+        .setPositiveButton(positiveActionButtonTitle) { dialog, _ ->
+            positiveAction.invoke()
+            dialog.dismiss()
+        }
+        .setOnDismissListener { dismissAction.invoke() }
+        .setCancelable(false)
+        .show()
+
 
 }

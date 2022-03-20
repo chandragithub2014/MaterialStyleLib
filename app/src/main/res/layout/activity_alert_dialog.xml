@@ -30,9 +30,67 @@
         android:id="@+id/simple_alert_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
         android:text="SimpleAlertDialog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/formDialog"
-        app:layout_constraintTop_toBottomOf="@+id/simpleAlertDialog1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formDialog" />
+
+    <Button
+        android:id="@+id/container_two_button_alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="ContainedAlert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simple_alert_dialog" />
+
+    <Button
+        android:id="@+id/outlined_two_btn_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="OutlinedAlert"
+        app:layout_constraintStart_toEndOf="@+id/container_two_button_alert_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/simple_alert_dialog" />
+
+    <Button
+        android:id="@+id/single_btn_outlined_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="OutlinedSingleBtnAlert"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_two_button_alert_dialog" />
+
+    <Button
+        android:id="@+id/contained_single_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="ContainedSingleAlert"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/single_btn_outlined_alert"
+        app:layout_constraintTop_toBottomOf="@+id/outlined_two_btn_alert" />
+
+    <Button
+        android:id="@+id/alert_dialog_mix1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MixedAlertType1"
+        android:layout_marginStart="16dp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/single_btn_outlined_alert" />
+
+    <Button
+        android:id="@+id/alert_mix_type_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="MixedAlertType2"
+        android:layout_marginStart="8dp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/alert_dialog_mix1"
+        app:layout_constraintTop_toBottomOf="@+id/single_btn_outlined_alert" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -172,7 +172,68 @@
         <item name="cardElevation">@dimen/style_lib_card_elevation</item>
         <item name="cornerRadius">@dimen/style_lib_card_corner_radius</item>
         <item name="strokeWidth">@dimen/style_lib_card_stroke_width</item>
-        <item name ="android:layout_margin">@dimen/style_lib_margin_normal</item>
+        <item name="android:layout_margin">@dimen/style_lib_margin_normal</item>
 
+    </style>
+
+    <style name="StyleLibOutlinedPositiveButton" parent="StyleLibOutlinedButton">
+        <item name="android:layout_marginEnd">@dimen/style_lib_margin_normal</item>
+    </style>
+
+    <style name="StyleLibOutlinedNegativeButton" parent="StyleLibOutlinedButton">
+        <item name="android:layout_marginEnd">@dimen/style_lib_margin_normal</item>
+    </style>
+
+    <style name="StyleLibContainedPositiveButton" parent="StyleLibContainedButton">
+        <item name="android:layout_marginEnd">@dimen/style_lib_margin_normal</item>
+    </style>
+
+    <style name="StyleLibContainedNegativeButton" parent="StyleLibContainedButton">
+        <item name="android:layout_marginEnd">@dimen/style_lib_margin_normal</item>
+    </style>
+
+    <style name="StyleLibAlertDialogContainedTwoButton" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/StyleLibContainedPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/StyleLibContainedNegativeButton</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/StyleLibAlertDialogMessageStyle</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/StyleLibAlertDialogTitleStyle</item>
+    </style>
+
+    <style name="StyleLibAlertDialogOutlinedTwoButton" parent="StyleLibAlertDialogContainedTwoButton">
+        <item name="buttonBarPositiveButtonStyle">@style/StyleLibOutlinedPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/StyleLibOutlinedNegativeButton</item>
+    </style>
+
+    <style name="StyleLibAlertDialogSingleOutlinedButton" parent="StyleLibAlertDialogOutlinedTwoButton">
+        <item name="buttonBarPositiveButtonStyle">@style/StyleLibOutlinedPositiveButton</item>
+    </style>
+
+    <style name="StyleLibAlertDialogSingleContainedButton" parent="StyleLibAlertDialogContainedTwoButton">
+        <item name="buttonBarPositiveButtonStyle">@style/StyleLibContainedPositiveButton</item>
+    </style>
+
+    <style name = "StyleLibAlertDialogPositiveContainedTwoButton" parent="StyleLibAlertDialogContainedTwoButton">
+        <item name="buttonBarPositiveButtonStyle">@style/StyleLibContainedPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/StyleLibOutlinedNegativeButton</item>
+    </style>
+
+    <style name = "StyleLibAlertDialogPositiveOutlinedTwoButton" parent="StyleLibAlertDialogContainedTwoButton">
+        <item name="buttonBarPositiveButtonStyle">@style/StyleLibOutlinedPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/StyleLibContainedNegativeButton</item>
+    </style>
+
+    <style name="StyleLibAlertDialogMessageStyle" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:layout_marginTop">@dimen/style_lib_margin_normal</item>
+        <item name="android:layout_marginBottom">@dimen/style_lib_margin_large</item>
+        <item name="android:textColor">@color/gray_500</item>
+        <item name="android:textSize">@dimen/style_lib_text_normal</item>
+    </style>
+
+    <style name="StyleLibAlertDialogTitleStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">@dimen/style_lib_text_normal</item>
+        <item name="fontFamily">@font/roboto_regular_fonts</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 </resources>
